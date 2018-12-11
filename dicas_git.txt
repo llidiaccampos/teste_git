@@ -1,0 +1,30 @@
+GitHub:
+
+Nãosei se sempre tem que começar fazendo isso:
+$ git config --global user.name "YOUR NAME"
+$ git config --global user.email "YOUR EMAIL ADDRESS"
+
+--> crio o respoitorio no github 
+--> botão direito onde quero guardar o arquivo (git bath here) 
+--> clono o repositorio (ai vai aparecer uma pasta dentro do meu computador)-->  git clone "url" 
+--> coloco o arquivo na pasta criada, altero ele --> git status 
+--> git add nomedoarquivo.formato (adiciono ele no index) git status (só para ver se as modificações foram aceitas)
+--> git commit -m "comento alguma coisa" (confirmo a mudança no head) 
+--> git push origin master (adiciona as mudanças no repositório remoto).
+
+* caso ainda não tenha adicionado/clonado um repositorio: 
+git remote add origin <servidor>
+
+#testando os branch:
+
+para criar um branch--> git checkout -b new_branch_teste # MAS AQUI NÃO SEI COMO FAZ PARA ESSE REPOSITORIO APARECER NO GITHUB.
+para retorno ao master--> git checkout master
+remover o brach--> git branch -d new_branch_teste
+
+#fazendo merge das alterações
+
+git merge master (ou o nome do outro repositório) --> Se não houver conflitos, basta realizar um commit normal para confirmar o merge. se deu erro corrigir na mão grande, e fazer o add para depois fazer o commit. Depois faz o push normal também!
+
+pode também pré-visualizar as alterações -->git diff <branch origem> <branch destino>
+
+# dentro do repositorio vai em insights --> network: aí ele mostra o "historico" de merge do repositório.
